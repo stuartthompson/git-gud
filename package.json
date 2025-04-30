@@ -19,5 +19,15 @@
     "main": "./out/extension.js",
     "activationEvents": [
         "onStartupFinished"
-    ]
+    ],
+    "scripts": {
+        "clean": "rm -rf out dist node_modules",
+        "build": "tsc -p ./"
+    },
+    "devDependencies": {
+        "@types/node": "^22.15.3",
+        "@types/vscode": "^1.99.1",
+        "esbuild": "^0.25.3",
+        "typescript": "^5.8.3"
+    }
 }
