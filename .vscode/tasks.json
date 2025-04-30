@@ -1,0 +1,29 @@
+{
+    // Specifies the version of the tasks configuration schema being used.
+    "version": "2.0.0",
+    // Defines an array of tasks that can be executed in the VS Code environment.
+    "tasks": [
+        {
+            // Specifies the type of task. In this case, it is an npm task.
+            "type": "npm",
+            // The npm script to run. This corresponds to the "watch" script in package.json.
+            "script": "watch",
+            // Associates the task with a problem matcher to parse errors and warnings.
+            "problemMatcher": "$tsc-watch",
+            // Indicates that the task runs in the background and does not terminate immediately.
+            "isBackground": true,
+            // Configures how the task's output is presented in the terminal.
+            "presentation": {
+                // Prevents the terminal from being revealed automatically when the task runs.
+                "reveal": "never"
+            },
+            // Groups the task into a specific category and sets it as the default build task.
+            "group": {
+                // Specifies the group type, in this case, "build".
+                "kind": "build",
+                // Marks this task as the default task for the "build" group.
+                "isDefault": true
+            }
+        }
+    ]
+}
