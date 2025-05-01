@@ -1,0 +1,10 @@
+# Build artifacts
+out
+dist
+*.vsix
+
+# Dependency directories
+node_modules
+
+# Test directories
+.vscode-test

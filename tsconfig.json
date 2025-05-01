@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "lib": [                /* Library files to be included in the compilation. */
+            "es6",
+            "es2020.string"
+        ],
+        "module": "commonjs",   /* Specify module code generation. */
+        "outDir": "./out",      /* Specify the output directory for all emitted files. */
+        "rootDir": "./src",     /* Specify the root source file directory. */
+        "sourceMap": true,      /* Generates '.map' files. */
+        "strict": true,         /* Enable all strict type-checking options. */
+        "target": "es6"         /* Specify ES6 as the target ECMAScript version. */
+    },
+    "exclude": [                /* Directories to exclude during compilation. */
+        "node_modules",
+        ".vscode-test",
+    ]
+}

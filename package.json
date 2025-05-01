@@ -1,0 +1,33 @@
+{
+    "name": "git-gud",
+    "displayName": "Git Gud",
+    "description": "A VSCode extension used to visualize the current git repository.",
+    "version": "0.0.1",
+    "publisher": "stuartthompson",
+    "keywords": [
+        "git",
+        "repository",
+        "visualization"
+    ],
+    "galleryBanner": {
+        "color": "#2a82df",
+        "theme": "dark"
+    },
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "main": "./out/extension.js",
+    "activationEvents": [
+        "onStartupFinished"
+    ],
+    "scripts": {
+        "clean": "rm -rf out dist node_modules",
+        "build": "tsc -p ./"
+    },
+    "devDependencies": {
+        "@types/node": "^22.15.3",
+        "@types/vscode": "^1.99.1",
+        "esbuild": "^0.25.3",
+        "typescript": "^5.8.3"
+    }
+}
